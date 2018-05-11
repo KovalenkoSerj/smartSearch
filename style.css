@@ -2,7 +2,7 @@ html {
 
     font-family: monospace, sans-serif;
     background-repeat: no-repeat;
-    background-image: url('image/background.jpg');
+    background-image: url('background.jpg');
     background-size: cover;
     background-attachment: fixed;
     font-size: 23px;
