@@ -21,8 +21,7 @@ function showMatches (){
         var regex = new RegExp (this.value, 'gi');
         cityName = place.city.replace(regex, `<span class = 'h1'>${this.value}</span>`);
         stateName = place.state.replace(regex, `<span class = 'h1'>${this.value}</span>` );
-        if (this.value === '')  suggestions.style.display = 'none';
-        else if (this.value !== '')  suggestions.style.display = 'block';
+        this.value === '' ? suggestions.style.display = 'none' : suggestions.style.display = 'block';
     return`
             <li class = 'li'>
             <span class = 'name'>${cityName}, ${stateName}</span>
@@ -34,7 +33,6 @@ function showMatches (){
 
 var suggestions = document.querySelector('.suggestions');
 var input =document.querySelector('.search').addEventListener('keyup', showMatches);
-
 
 
 
